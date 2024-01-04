@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #f4ca44;
+  --secondary-color: #705401;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+}
+
+.container {
+  .hero {
+    position: relative;
+    z-index: 9999;
+    height: 85vh;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid var(--main-color);
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px;
+  }
+}
+
+.hero {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+  }
+}
+
+.hero nav .logo {
+  color: var(--secondary-color);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero nav .nav-links {
+  color: black;
+  display: flex;
+  gap: 55px;
+  text-transform: capitalize;
+}
+.hero {
+  nav {
+    .nav-links {
+      a {
+        transition: all 0.6s ease;
+      }
+    }
+  }
+}
+
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a.active {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.content {
+  .text-content {
+    width: 40%;
+    text-align: justify;
+  }
+}
+
+.content {
+  .text-content {
+    h1 {
+      margin-bottom: 20px;
+      font-size: 50px;
+      color: aliceblue;
+    }
+  }
+}
+
+.text-content-img {
+  width: 40%;
+}
+
+.text-content-img img {
+  /* background: #000; */
+  width: 115%;
+}
+
+.content .text-content h4 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: rgb(91, 88, 88);
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.hero .content .text-content .btn {
+  padding: 15px 20px;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.hero .content .text-content .btn:hover {
+  color: rgb(255, 124, 168);
+  background: transparent;
+  transition: all 0.6s ease;
+}
+
+.socials {
+  position: absolute;
+}
